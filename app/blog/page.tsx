@@ -2,29 +2,36 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <section>
-      <h1 className="text-2xl font-semibold mb-2">Olive's Garden</h1>
-      <p className="mb-4">Am I a blogger now?!! Ok then here's some miscellaneous BS~</p>
-      <ul className="list-disc pl-6 space-y-2">
+    <section className="max-w-3xl mx-auto p-6 bg-yellow-50 rounded-2xl shadow-lg">
+      <h1 className="text-4xl font-bold text-green-800 mb-2">🍄 Olive's Garden</h1>
+      <p className="text-lg text-green-900 mb-6 italic">
+        a carefully curated patch of miscellaneous nonsense 🌱
+      </p>
+
+      <ul className="list-disc pl-6 space-y-4 text-green-800">
         <li>
-          <Link href="/blog/consumed" className="text-blue-600 hover:underline">
-            Consumed Media
+          <Link href="/blog/consumed" className="text-emerald-700 underline hover:text-emerald-900">
+            📚 Consumed Media
           </Link>
+          <p className="text-sm text-green-700 ml-4">what i've watched, read, devoured, or doomscrolled</p>
         </li>
         <li>
-          <Link href="/blog/thoughts" className="text-blue-600 hover:underline">
-            Thought Thoughts
+          <Link href="/blog/thoughts" className="text-emerald-700 underline hover:text-emerald-900">
+            💭 Thought Thoughts
           </Link>
+          <p className="text-sm text-green-700 ml-4">a pond full of little ripples and brain frogs</p>
         </li>
         <li>
-          <Link href="/blog/memes" className="text-blue-600 hover:underline">
-            Hoarded Memes
+          <Link href="/blog/memes" className="text-emerald-700 underline hover:text-emerald-900">
+            🐸 Hoarded Memes
           </Link>
+          <p className="text-sm text-green-700 ml-4">some funny leaves i picked up and stuffed in my pockets</p>
         </li>
         <li>
-          <Link href="/blog/bits" className="text-blue-600 hover:underline">
-            Cool Bits and Bobs
+          <Link href="/blog/bits" className="text-emerald-700 underline hover:text-emerald-900">
+            ✨ Cool Bits and Bobs
           </Link>
+          <p className="text-sm text-green-700 ml-4">code snippets, web trinkets, shiny things</p>
         </li>
       </ul>
     </section>
