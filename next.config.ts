@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'books.google.com',
-        pathname: '/b/isbn/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'books.googleusercontent.com',
       },
     ],
   },
