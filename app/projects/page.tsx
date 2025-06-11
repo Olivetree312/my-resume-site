@@ -14,7 +14,7 @@ export default function ProjectsPage() {
             In <strong>EE97 Lab 6</strong>, I built and tested half-wave and full-wave rectifier circuits with filtering capacitors, analyzing ripple voltage under different load conditions.
           </p>
           <a
-            href="/labs/EE97_Lab6_Report.pdf"
+            href="/labs/EE97_LAB_6_Report.pdf"
             download
             className="text-amber-700 underline hover:text-amber-900"
           >
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
             In <strong>EE97 Lab 9</strong>, I explored LM555 oscillators and built a counting circuit with CD4026 to light LEDs and update a 7-segment display.
           </p>
           <a
-            href="/labs/EE97_Lab9_Report.pdf"
+            href="/labs/EE97_LAB_9_Report.pdf"
             download
             className="text-amber-700 underline hover:text-amber-900"
           >
