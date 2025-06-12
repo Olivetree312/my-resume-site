@@ -1,3 +1,4 @@
+// next.config.ts
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
@@ -5,15 +6,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'books.google.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'books.googleusercontent.com',
-      },
-      {
-        protocol: 'http',
-        hostname: 'books.google.com', // just in case some links use http
+        hostname: 'covers.openlibrary.org',
+        pathname: '/b/isbn/**',
       },
     ],
   },
