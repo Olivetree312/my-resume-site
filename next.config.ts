@@ -13,12 +13,9 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'http',
-        hostname: 'books.google.com',
+        hostname: 'books.google.com', // just in case some links use http
       },
     ],
-  },
-  webpack: (config) => {
-    return config;
   },
 };
 
