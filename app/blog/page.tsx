@@ -10,10 +10,16 @@ export default function Blog() {
 
       <ul className="list-disc pl-6 space-y-4 text-green-800">
         <li>
-          <Link href="/blog/consumed" className="text-emerald-700 underline hover:text-emerald-900">
-            📚 Consumed Media
+          <Link href="/blog/reads" className="text-emerald-700 underline hover:text-emerald-900">
+            📚 Read Reads
           </Link>
-          <p className="text-sm text-green-700 ml-4">what i've watched, read, devoured, or doomscrolled</p>
+          <p className="text-sm text-green-700 ml-4">i'm a literate(?) forest gremlin</p>
+        </li>
+        <li>
+        <Link href="/blog/watches" className="text-emerald-700 underline hover:text-emerald-900">
+          🎥 Watched Watches
+          </Link>
+          <p className="text-sm text-green-700 ml-4">i consume a lot of media alone in my tree trunk</p>
         </li>
         <li>
           <Link href="/blog/thoughts" className="text-emerald-700 underline hover:text-emerald-900">
