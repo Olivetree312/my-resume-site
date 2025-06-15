@@ -8,52 +8,27 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'covers.openlibrary.org',
         pathname: '/b/isbn/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'beetlejuicebroadway.com',
-        pathname: '/images/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'sweeneytoddbroadway.com',
-        pathname: '/assets/images/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'sixthemusical.com',
-        pathname: '/images/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'upload.wikimedia.org',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.myanimelist.net',
-        pathname: '/images/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'static.wikia.nocookie.net',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'yt3.googleusercontent.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'i.ytimg.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.teamstarkid.com',
-        pathname: '/img/shows/**',
       }
+    ],
+    domains: [
+      "res.cloudinary.com",
+      "deadline.com",
+      "i.ytimg.com",
+      "upload.wikimedia.org",
+      "i.imgur.com",
+      "static.wikia.nocookie.net",
+      "m.media-amazon.com",
+      "asianwiki.com",
+      "pbs.twimg.com",
+      "sixthemusical.com",
+      "beetlejuicebroadway.com",
+      "usishield.com",
+      "64.media.tumblr.com",
+      "i1.sndcdn.com",
+      "hazbinhotel.fandom.com",
+      "tadc.fandom.com",
+      "gemini-home-entertainment.fandom.com",
+      "mandela-catalogue.fandom.com"
     ]
   }
 };

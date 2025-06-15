@@ -9,31 +9,31 @@ const categories = [
       {
         title: "Beetlejuice",
         link: "https://beetlejuicebroadway.com",
-        image: "https://beetlejuicebroadway.com/images/poster.jpg",
+        image: "https://beetlejuicebroadway.com/_img/home-top.webp?v=2",
         blurb: "A darkly hilarious Broadway musical about the ghost with the most."
       },
       {
         title: "Sweeney Todd: The Demon Barber of Fleet Street",
-        link: "https://sweeneytoddbroadway.com",
-        image: "https://sweeneytoddbroadway.com/assets/images/sweeney.jpg",
+        link: "https://sweeneytodd.fandom.com/wiki/Main_Page",
+        image: "https://i.imgur.com/ls7Umce.jpg",
         blurb: "A tale of love, revenge, and meat pies."
       },
       {
         title: "SIX",
-        link: "https://sixthemusical.com",
-        image: "https://sixthemusical.com/images/six-keyart.jpg",
+        link: "https://en.wikipedia.org/wiki/Six_(musical)",
+        image: "https://res.cloudinary.com/ds5gdw0uw/images/c_scale,w_480,h_480,dpr_2/f_auto,q_auto:good/v1739830022/Six_Event_Card_1200x1200/Six_Event_Card_1200x1200.png?_i=AA",
         blurb: "The six wives of Henry VIII remix their stories in this pop-concert musical."
       },
       {
         title: "Nerdy Prudes Must Die",
         link: "https://www.teamstarkid.com/nerdy-prudes",
-        image: "https://www.teamstarkid.com/img/shows/NPMD.png",
+        image: "https://static.wikia.nocookie.net/starkid/images/c/c7/NPMD_Album_Cover.jpg/revision/latest?cb=20230911134325",
         blurb: "A musical horror-comedy about high school revenge."
       },
       {
         title: "Les Miserables",
-        link: "https://www.netflix.com/title",
-        image: "https://upload.wikimedia.org/wikipedia/en/0/0e/Les-miserables-movie-poster.jpg",
+        link: "https://lesmiserables.fandom.com/wiki/Les_Misérables_Wiki",
+        image: "https://m.media-amazon.com/images/M/MV5BY2Q1YjIxZTAtZTU0YS00ZmE5LWEwODEtY2IyYWM2ZTJlOWE1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         blurb: "An epic tale of redemption and revolution set in 19th-century France."
       }
     ]
@@ -43,38 +43,38 @@ const categories = [
     items: [
       {
         title: "Hazbin Hotel",
-        link: "https://en.wikipedia.org/wiki/Hazbin_Hotel",
-        image: "https://upload.wikimedia.org/wikipedia/en/1/16/HazbinHotelTitleCard.jpg",
+        link: "https://hazbinhotel.fandom.com/wiki/Hazbin_Hotel_Wiki",
+        image: "https://static.wikia.nocookie.net/international-entertainment-project/images/b/b2/Hazbin_Hotel_-_poster_%28English%29.jpg/revision/latest?cb=20231224180837",
         blurb: "A demon princess opens a rehab hotel in hell in this edgy animation."
       },
       {
         title: "Helluva Boss",
         link: "https://www.youtube.com/@Vivziepop",
-        image: "https://upload.wikimedia.org/wikipedia/en/b/b5/Helluva_Boss_title_card.png",
+        image: "https://m.media-amazon.com/images/M/MV5BMjRlZjIxNDktYWY2Ni00YzY5LTk0MDItYWU1YjJiYjMwYzY4XkEyXkFqcGc@._V1_.jpg",
         blurb: "Follow a misfit group of demons running an assassination business."
       },
       {
         title: "Fundamental Paper Education",
-        link: "https://fundamental-paper-education.fandom.com/wiki",
-        image: "https://static.wikia.nocookie.net/fundamental-paper-education/images/5/50/Fundamental_Titlecard.png",
+        link: "https://fundamental-paper-education.fandom.com/wiki/Fundamental_Paper_Education_Wiki",
+        image: "https://i.ytimg.com/vi/0X6AUj56_hY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDr5tYAS3Bq3cTJPVnc69L_Pg0jNA",
         blurb: "A haunting animated web series that deconstructs education and society."
       },
       {
         title: "Murder Drones",
         link: "https://www.glitchprod.com/murder-drones",
-        image: "https://i.ytimg.com/vi/8VZ-sgDRsCk/maxresdefault.jpg",
+        image: "https://m.media-amazon.com/images/M/MV5BMDk0NTIzMTEtZmRlZi00Y2MyLTk4ZmItZTNjZDYzODUzYWYzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         blurb: "Killer robots with emotional baggage—on a snowy post-apocalyptic Earth."
       },
       {
         title: "Lackadaisy",
         link: "https://www.youtube.com/watch?v=vffu6FG4YP4",
-        image: "https://upload.wikimedia.org/wikipedia/en/4/47/Lackadaisy_Pilot_poster.jpg",
+        image: "https://m.media-amazon.com/images/M/MV5BYTI3MTZlYmYtYTM4NS00ZGUzLTljNjEtODQ1ZDBjNzQyNjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         blurb: "Bootlegging cats in a stunningly animated 1920s St. Louis."
       },
       {
         title: "The Amazing Digital Circus",
-        link: "https://www.youtube.com/@GLITCH",
-        image: "https://i.ytimg.com/vi/lyVZ8p87Sx0/maxresdefault.jpg",
+        link: "https://tadc.fandom.com/wiki/Home",
+        image: "https://static.wikia.nocookie.net/tadc/images/0/0a/TADC_poster_updated_Glitchstore.png/revision/latest?cb=20240228042350",
         blurb: "A surreal and psychedelic virtual circus adventure."
       }
     ]
@@ -84,26 +84,26 @@ const categories = [
     items: [
       {
         title: "Adventure Time",
-        link: "https://en.wikipedia.org/wiki/Adventure_Time",
-        image: "https://upload.wikimedia.org/wikipedia/en/f/f0/Adventure_Time_-_Title_card.png",
+        link: "https://adventuretime.fandom.com/wiki/Adventure_Time_Wiki",
+        image: "https://deadline.com/wp-content/uploads/2016/08/adventure_time.jpg?w=1024",
         blurb: "A surreal coming-of-age fantasy following Finn and Jake in the Land of Ooo."
       },
       {
         title: "Over the Garden Wall",
-        link: "https://en.wikipedia.org/wiki/Over_the_Garden_Wall",
-        image: "https://upload.wikimedia.org/wikipedia/en/0/0e/Over_the_Garden_Wall.png",
+        link: "https://over-the-garden-wall.fandom.com/wiki/Over_the_Garden_Wall_Wiki",
+        image: "https://static.wikia.nocookie.net/tome-of-the-unknown/images/3/3c/Over-the-garden-wall-poster.jpg/revision/latest?cb=20140717195515",
         blurb: "Two brothers wander through a mysterious, dreamlike forest."
       },
       {
         title: "Futurama",
-        link: "https://en.wikipedia.org/wiki/Futurama",
-        image: "https://upload.wikimedia.org/wikipedia/en/3/3e/Futurama_Logo.svg",
+        link: "https://futurama.fandom.com/wiki/Futurama_Wiki",
+        image: "https://static.wikia.nocookie.net/originalcm/images/d/d6/Futurama_20080722.jpg/revision/latest?cb=20100328122746",
         blurb: "A slacker from the 20th century wakes up in the 31st century."
       },
       {
         title: "South Park",
-        link: "https://www.southparkstudios.com",
-        image: "https://upload.wikimedia.org/wikipedia/en/8/82/South_Park_logo.svg",
+        link: "https://southpark.cc.com",
+        image: "https://i1.sndcdn.com/artworks-74EJjJm6ibNt1Qv2-1Xs9ew-t500x500.jpg",
         blurb: "A biting satirical look at modern society through the eyes of four foul-mouthed kids."
       }
     ]
@@ -114,37 +114,37 @@ const categories = [
       {
         title: "The Disastrous Life of Saiki K.",
         link: "https://myanimelist.net/anime/33255/Saiki_Kusuo_no_%CE%A8_nan",
-        image: "https://cdn.myanimelist.net/images/anime/13/82840.jpg",
+        image: "https://m.media-amazon.com/images/M/MV5BMzJhYWEyMWUtZDYwNS00NTU4LTgwODItYjBlNzEwMTc5MTc2XkEyXkFqcGc@._V1_.jpg",
         blurb: "A psychic teen just wants a normal life, but chaos follows him everywhere."
       },
       {
         title: "Uramichi Oniisan",
         link: "https://myanimelist.net/anime/40748/Uramichi_Oniisan",
-        image: "https://cdn.myanimelist.net/images/anime/1702/115870.jpg",
+        image: "https://m.media-amazon.com/images/I/81mC-5Zhs9L._UF1000,1000_QL80_.jpg",
         blurb: "A children's show host hides adult ennui behind a forced smile and fitness routines."
       },
       {
         title: "Wonder Egg Priority",
-        link: "https://www.crunchyroll.com/series/GVDHX8QNW/WONDER-EGG-PRIORITY",
-        image: "https://cdn.myanimelist.net/images/anime/1705/111567.jpg",
+        link: "https://myanimelist.net/anime/43299/Wonder_Egg_Priority",
+        image: "https://usishield.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-16-at-2.29.01-PM-900x509.png",
         blurb: "A surreal exploration of grief and girlhood through a mysterious egg-based world."
       },
       {
         title: "Citrus",
         link: "https://myanimelist.net/anime/34561/Citrus",
-        image: "https://cdn.myanimelist.net/images/anime/1220/89136.jpg",
+        image: "https://m.media-amazon.com/images/I/915H1K6EekL.jpg",
         blurb: "Tensions rise as a high school girl falls for her new stepsister."
       },
       {
         title: "The Girl from the Other Side",
         link: "https://myanimelist.net/anime/37771/Totsukuni_no_Shoujo",
-        image: "https://cdn.myanimelist.net/images/anime/1810/121301.jpg",
+        image: "https://m.media-amazon.com/images/I/91XY1nLj1XL.jpg",
         blurb: "A haunting tale of a cursed forest and the bond between a beast and a child."
       },
       {
         title: "Bloom into You",
         link: "https://myanimelist.net/anime/37430/Yagate_Kimi_ni_Naru",
-        image: "https://cdn.myanimelist.net/images/anime/1813/103632.jpg",
+        image: "https://m.media-amazon.com/images/M/MV5BODNlZGZmZjktNWEwNy00MTJlLWFiY2YtMDA1ZjQ5NDVkZTQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         blurb: "A gentle, introspective love story about self-discovery and same-gender romance."
       }
     ]
@@ -154,20 +154,20 @@ const categories = [
     items: [
       {
         title: "Friendly Rivalry",
-        link: "https://en.wikipedia.org/wiki/Friendly_Rivalry",
-        image: "https://upload.wikimedia.org/wikipedia/commons/6/65/Korean_Drama.png",
+        link: "https://asianwiki.com/Friendly_Rivalry",
+        image: "https://upload.wikimedia.org/wikipedia/en/a/a7/Friendly_Rivalry_poster.png",
         blurb: "A playful term for the tension-fueled dynamic between two close characters."
       },
       {
         title: "Hotel del Luna",
-        link: "https://en.wikipedia.org/wiki/Hotel_del_Luna",
-        image: "https://upload.wikimedia.org/wikipedia/en/2/26/Hotel_del_Luna.jpg",
+        link: "https://asianwiki.com/Hotel_Del_Luna",
+        image: "https://asianwiki.com/images/4/4c/Hotel_Del_Luna-GP.jpg",
         blurb: "A mysterious hotel for ghosts, run by a moody, centuries-old woman."
       },
       {
         title: "Sweet Home",
-        link: "https://en.wikipedia.org/wiki/Sweet_Home_(TV_series)",
-        image: "https://upload.wikimedia.org/wikipedia/en/7/77/Sweet_Home_TV_series.jpg",
+        link: "https://www.imdb.com/title/tt11612120/",
+        image: "https://asianwiki.com/images/4/47/Sweet_Home-Netflix-MP2.jpg",
         blurb: "When humans turn into monsters, a troubled teen fights to survive in an apartment complex."
       }
     ]
@@ -177,32 +177,32 @@ const categories = [
     items: [
       {
         title: "Alien Stage",
-        link: "https://www.youtube.com/playlist?list=PL7VmhWGNRxKgMfuTf7lAlxCeumO1tqW9A",
-        image: "https://yt3.googleusercontent.com/ytc/AIdro_k4KHxVX0z5g-MsLQ0_4UOUY2FFm4rV1MLQ8V4JKQ=s900-c-k-c0x00ffffff-no-rj",
+        link: "https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki",
+        image: "https://static.wikia.nocookie.net/2d-music-projects-multimedia/images/f/f5/AlienStagePoster.png/revision/latest/scale-to-width-down/985?cb=20240620230747",
         blurb: "A K-pop inspired animated competition with a dark twist and a deep lore."
       },
       {
         title: "Homestuck",
         link: "https://homestuck.net/",
-        image: "https://static.wikia.nocookie.net/mspaintadventures/images/e/e3/Homestuck_Logo.png",
+        image: "https://static.wikia.nocookie.net/mspaintadventures/images/4/4b/HS_Book_1.png/revision/latest/scale-to-width-down/1200?cb=20120804131900",
         blurb: "A multimedia webcomic about kids, games, and the end of the world—kind of."
       },
       {
         title: "Gemini Home Entertainment",
-        link: "https://en.wikipedia.org/wiki/Gemini_Home_Entertainment",
-        image: "https://static.wikia.nocookie.net/analog-archives/images/3/35/Gemini_title_card.png",
+        link: "https://gemini-home-entertainment.fandom.com/wiki/Gemini_Home_Entertainment",
+        image: "https://64.media.tumblr.com/02ad55de559d6e7c40cb152bdda621f1/13da43e1514c7648-3a/s1280x1920/14dc669084e660461ff73396248a4f6481075fb7.pnj",
         blurb: "An analog horror series mimicking '80s educational tapes with increasingly unsettling content."
       },
       {
         title: "The Mandela Catalogue",
-        link: "https://en.wikipedia.org/wiki/The_Mandela_Catalogue",
-        image: "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Mandela_Catalogue_title_card.png",
+        link: "https://mandela-catalogue.fandom.com/wiki/The_Mandela_Catalogue_Wiki",
+        image: "https://i.ytimg.com/vi/-TqsuJmHLng/maxresdefault.jpg",
         blurb: "A horror web series exploring doppelgängers, faith, and the uncanny through VHS-era tapes."
       },
       {
         title: "Local 58",
-        link: "https://en.wikipedia.org/wiki/Local_58",
-        image: "https://upload.wikimedia.org/wikipedia/en/f/fc/Local_58_logo.png",
+        link: "https://local58.fandom.com/wiki/Local_58",
+        image: "https://pbs.twimg.com/media/FoiYf_zXsAAPGTg.jpg",
         blurb: "A pioneer of analog horror, broadcasting fear from a haunted public access channel."
       }
     ]
