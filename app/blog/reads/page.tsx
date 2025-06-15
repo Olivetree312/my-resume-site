@@ -2,16 +2,36 @@
 import Image from "next/image";
 import Link from "next/link";
 const books = [
-    { title: "Gideon the Ninth", author: "Tamsyn Muir", isbn: "9781250313195" },
-    { title: "Diavola", author: "Jennifer Thorne", isbn: "9781250826121" },
-    { title: "Incidents Around the House", author: "Josh Malerman", isbn: "9780593723128" },
-    { title: "Schindler's List", author: "Thomas Keneally", isbn: "9780340606513" },
-    { title: "Fingersmith", author: "Sarah Waters", isbn: "1573222038" },
-    { title: "The Forever War", author: "Joe Haldeman", isbn: "9780312536633" },
-    { title: "My Year of Rest and Relaxation", author: "Ottessa Moshfegh", isbn: "9781473549548" },
-    { title: "Slewfoot", author: "Brom", isbn: "9781250829924" },
-    { title: "It Devours!", author: "Joseph Fink, Jeffrey Cranor", isbn: "9780062476050" },
-    { title: "The Invisible Life of Addie LaRue", author: "V. E. Schwab", isbn: "9781250830746" },
+    { title: "Gideon the Ninth", author: "Tamsyn Muir", isbn: "9781250313195",
+      blurb: "lesbian necromancers explore a haunted gothic palace in space?!! scifi-fantasy. absolutely mind-blowing plot. endless banter."
+     },
+    { title: "Diavola", author: "Jennifer Thorne", isbn: "9781250826121" ,
+      blurb: "woman attends annual vacation with dysfunctional family: haunted Italian villa, sus villagers, memory-loss, someone goes missing. creepy, vengeful b*tch of a ghost follows her home. woman gets quite pissed."
+    },
+    { title: "Incidents Around the House", author: "Josh Malerman", isbn: "9780593723128",
+      blurb: "POV: you're the creepy child in every horror movie. 'Other Mommy' who lives in the closet wants to 'go inside your heart'?? she's nice...until she isn't!1!!!"
+     },
+    { title: "Schindler's List", author: "Thomas Keneally", isbn: "9780340606513",
+      blurb: "a rich party-boy/ serial cheater of a German officer saves a lot of Jews (with the help of his wife, who is underappreciated) during WWII."
+     },
+    { title: "Fingersmith", author: "Sarah Waters", isbn: "1573222038",
+      blurb: "when the conner gets conned in Victorian-era Britain. thieving maid x rich heiress engaged to a cunning scammer. "
+     },
+    { title: "The Forever War", author: "Joe Haldeman", isbn: "9780312536633" ,
+      blurb: "genius soldiers battle aliens in a galactic war spanning over a millennium. time-dilation during travel means centuries pass on Earth while they age only months. basically Star-Wars x All Quiet on the Western Front."
+    },
+    { title: "My Year of Rest and Relaxation", author: "Ottessa Moshfegh", isbn: "9781473549548" ,
+      blurb: "when you're deeply depressed but have a lot of purchasing power: sad girl just wants to hibernate, finds world's most incompetent psychiatrist to be her drug dealer."
+    },
+    { title: "Slewfoot", author: "Brom", isbn: "9781250829924" ,
+      blurb: "young widow vs patriarchy in Puritan Colonial New England...with the help of a HaNdSomE evil spirit. delicious revenge served with much gore. a whimsical journey of self-discovery!"
+    },
+    { title: "It Devours!", author: "Joseph Fink, Jeffrey Cranor", isbn: "9780062476050" ,
+    blurb: "friendly town where eldrich horrors are the norm. scientist investigates sTraNge RuMbLinG. encounters cult of the Smiling God, which has hAwT congregation leader."
+    },
+    { title: "The Invisible Life of Addie LaRue", author: "V. E. Schwab", isbn: "9781250830746" ,
+      blurb: "immortal woman curses people with goldfish-memory, is forgotten by everyone she meets. Terribly sad and lonely. centuries pass and she meets someone who can remember her!!"
+    },
     { title: "Thornhedge", author: "T. Kingfisher", isbn: "9781250244093" },
     { title: "Lessons in Chemistry", author: "Bonnie Garmus", isbn: "9780385547345" },
     { title: "How to Know a Person", author: "David Brooks", isbn: "9780593230060" },
@@ -77,8 +97,9 @@ export default function BlogPage() {
               className="mx-auto mb-4"
               unoptimized
             />
-            <h2 className="text-lg font-semibold text-center">{book.title}</h2>
-            <p className="text-sm text-gray-600 text-center">{book.author}</p>
+            <h2 className="text-lg text-green-600 font-bold text-center">{book.title}</h2>
+            <h3 className="text-med text-green-400 text-center">{book.author}</h3>
+            <p className="text-sm text-center">{book.blurb}</p>
           </div>
         ))}
       </div>

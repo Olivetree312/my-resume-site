@@ -11,8 +11,9 @@ const nextConfig: NextConfig = {
       }
     ],
     domains: [
+      "i.pinimg.com",
       "res.cloudinary.com",
-      "deadline.com",
+      "www.nuclearblast.com",
       "i.ytimg.com",
       "upload.wikimedia.org",
       "i.imgur.com",

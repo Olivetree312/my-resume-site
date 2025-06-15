@@ -9,7 +9,7 @@ const categories = [
       {
         title: "Beetlejuice",
         link: "https://beetlejuicebroadway.com",
-        image: "https://beetlejuicebroadway.com/_img/home-top.webp?v=2",
+        image: "https://m.media-amazon.com/images/I/81cHIWlHDHL.jpg",
         blurb: "A darkly hilarious Broadway musical about the ghost with the most."
       },
       {
@@ -56,7 +56,7 @@ const categories = [
       {
         title: "Fundamental Paper Education",
         link: "https://fundamental-paper-education.fandom.com/wiki/Fundamental_Paper_Education_Wiki",
-        image: "https://i.ytimg.com/vi/0X6AUj56_hY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDr5tYAS3Bq3cTJPVnc69L_Pg0jNA",
+        image: "https://i.pinimg.com/236x/fa/d1/62/fad1626e3d8347c358195a7c2a24a7af.jpg",
         blurb: "A haunting animated web series that deconstructs education and society."
       },
       {
@@ -85,7 +85,7 @@ const categories = [
       {
         title: "Adventure Time",
         link: "https://adventuretime.fandom.com/wiki/Adventure_Time_Wiki",
-        image: "https://deadline.com/wp-content/uploads/2016/08/adventure_time.jpg?w=1024",
+        image: "https://www.nuclearblast.com/cdn/shop/files/gbydco366_a1ebfbc7-df95-46c3-a448-4c1512e66cc0.jpg?v=1742399406",
         blurb: "A surreal coming-of-age fantasy following Finn and Jake in the Land of Ooo."
       },
       {
@@ -97,7 +97,7 @@ const categories = [
       {
         title: "Futurama",
         link: "https://futurama.fandom.com/wiki/Futurama_Wiki",
-        image: "https://static.wikia.nocookie.net/originalcm/images/d/d6/Futurama_20080722.jpg/revision/latest?cb=20100328122746",
+        image: "https://i.pinimg.com/474x/35/93/9b/35939b9cffe613ae89f29e019dbe9a1f.jpg",
         blurb: "A slacker from the 20th century wakes up in the 31st century."
       },
       {
@@ -126,7 +126,7 @@ const categories = [
       {
         title: "Wonder Egg Priority",
         link: "https://myanimelist.net/anime/43299/Wonder_Egg_Priority",
-        image: "https://usishield.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-16-at-2.29.01-PM-900x509.png",
+        image: "https://upload.wikimedia.org/wikipedia/en/5/53/Wonder_Egg_Priority_key_visual.jpg",
         blurb: "A surreal exploration of grief and girlhood through a mysterious egg-based world."
       },
       {
@@ -221,21 +221,23 @@ export default function WatchesPage() {
           <h2 className="text-2xl font-semibold mb-4">{title}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {items.map(({ title, link, image, blurb }) => (
-              <Card key={title} className="hover:shadow-lg transition">
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src={image}
-                    alt={title}
-                    width={300}
-                    height={450}
-                    className="rounded-t-lg object-cover w-full h-60"
-                  />
-                  <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-1">{title}</h3>
-                    <p className="text-sm text-muted-foreground line-clamp-3">{blurb}</p>
-                  </CardContent>
-                </a>
-              </Card>
+                <Card key={`${title}-${link}`} className="hover:shadow-lg transition overflow-hidden">
+  <a href={link} target="_blank" rel="noopener noreferrer">
+    <div className="relative w-full aspect-[2/3] bg-white">
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-contain p-2"
+        sizes="(max-width: 768px) 100vw, 300px"
+      />
+    </div>
+    <CardContent className="p-4">
+      <h3 className="text-lg font-semibold mb-1">{title}</h3>
+      <p className="text-sm text-muted-foreground line-clamp-3">{blurb}</p>
+    </CardContent>
+  </a>
+</Card>
             ))}
           </div>
         </div>
