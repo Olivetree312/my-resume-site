@@ -85,7 +85,7 @@ const categories = [
       {
         title: "Adventure Time",
         link: "https://adventuretime.fandom.com/wiki/Adventure_Time_Wiki",
-        image: "https://www.nuclearblast.com/cdn/shop/files/gbydco366_a1ebfbc7-df95-46c3-a448-4c1512e66cc0.jpg?v=1742399406",
+        image: "https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/b/bd/Main_characters_together.jpg/revision/latest?cb=20120731202011",
         blurb: "A surreal coming-of-age fantasy following Finn and Jake in the Land of Ooo."
       },
       {
