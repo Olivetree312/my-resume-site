@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Generate filenames dynamically
-const memeFilenames = Array.from({ length: 139 }, (_, i) => `teEheE - ${i + 1} of 139.jpeg`);
+const memeFilenames = Array.from({ length: 139 }, (_, i) => `teEheE-${i + 1}.jpeg`);
 
 export default function MemesPage() {
   return (
