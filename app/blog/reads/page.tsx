@@ -158,6 +158,9 @@ const books = [
     { title: "The House in the Cerulean Sea", author: "TJ Klune", isbn: "9798891642577" ,
       blurb: "tired social worker visits orphanage of magical misfits. hear melts. found family saves the world. a quiet love story."
     },
+    { title: "Reincarnation Blues", author: "Michael Poore", isbn: "9780399178481" ,
+      blurb: "old soul falls in love with Death over thousands of reincarnations. must reach nirvana soon or be tossed into the cosmic shredder."
+    },
   ];
 export default function BlogPage() {
   return (
