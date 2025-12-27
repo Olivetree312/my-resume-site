@@ -1,7 +1,7 @@
 export default function ProjectsPage() {
   return (
     <section className="max-w-3xl mx-auto p-6 bg-yellow-50 rounded-2xl shadow-lg">
-      <h1 className="text-4xl font-bold text-yellow-900 mb-4">🧪 Forest Findings & Tinkered Trinkets</h1>
+      <h1 className="text-4xl font-bold text-yellow-900 mb-4">🧪 Forest Findings</h1>
       <p className="text-lg text-yellow-800 mb-6">
         Below are a few enchanted logs from my studies, available to read or take home as scrolls:
       </p>
