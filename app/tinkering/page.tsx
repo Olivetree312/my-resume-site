@@ -13,7 +13,7 @@ export default function TinkeringPage() {
           <Link href="/tinkering/frog-dodge/index.html" className="text-emerald-700 underline hover:text-emerald-900">
           🐸 Frog Dodge
           </Link>
-          <p className="text-sm text-green-700 ml-4">this frog plays games</p>
+          <p className="text-sm text-green-700 ml-4">frog=danger</p>
         </li>
       </ul>
     </section>
