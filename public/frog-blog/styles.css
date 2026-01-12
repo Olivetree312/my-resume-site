@@ -28,6 +28,7 @@ body {
 .modal {
   position: fixed;
   inset: 0;
+  z-index: 9999;
   display: none;           /* hidden by default */
   place-items: center;
   background: rgba(0, 0, 0, 0.45);
@@ -41,6 +42,7 @@ body {
 
 .modal-content {
   position: relative;
+  z-index: 10000;
   width: min(520px, 92vw);
   background: white;
   border-radius: 16px;
@@ -84,6 +86,7 @@ body {
   position: relative;
   perspective: 1400px; /* gives 3D depth */
   margin: 2rem auto;
+  z-index: 1;
 }
 
 /* each page sits on top of the previous */
