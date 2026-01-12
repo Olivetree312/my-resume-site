@@ -1,18 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--modern html-->
+<!DOCTYPE html> 
+<!--root elem of page: english-> search engines, browser fonts/ pronunciation-->
+<html lang="en"> 
 <head>
+  <!--allows emojis+nonenglish char, prevents weird symbols-->
   <meta charset="UTF-8" />
+  <!--responsive design~ "use device's real width"-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--page title seen in browser tab-->
   <title>Froggy Collage</title>
+  <!--connects html-> css-->
   <link rel="stylesheet" href="styles.css" />
 </head>
+<!--visible content-->
 <body>
+  <!--unique identifier for main content of page, only ONE elem given id
+      used by CSS: #collage {...}
+              JS: document.getElementById("collage")
+  -->
   <main id="collage">
+    <!--one header per page-->
     <h1>Welcome to Frogtopia 🐸</h1>
-    <div class="interactive-frog" onclick="ribbit()">Click me!</div>
-    <!-- Add more frog elements here -->
+    <!--interactive elem connecting HTML+JS
+        <div> is generic container used when no semantic elem fits
+        (can be reused) class="..." is CSS hook used like
+          .interactive-frog {
+          background: green;
+        }
+    -->
+    <!--onclick="ribbit()" is inline JS event handler -> when clicked, calls ribbit()
+        script.js should contain ribbit() function -->
+    <!--button is usually used, but using div this time for customization/ simplicity-->
+    <div class="interactive-frog" onclick="small()">the smolest </div>    
+    <div class="interactive-frog" onclick="big()">the biggest </div>
+    <div class="interactive-frog" onclick="cute()">no.1 cutie</div>
+    <div class="interactive-frog" onclick="loud()">the loudmouth</div>
+    <div class="interactive-frog" onclick="weird()">the weirdo</div>
+    <div class="interactive-frog" onclick="og()">the OG model</div>
   </main>
+    <!-- Popup / Modal (hidden by default) -->
+    <!--REUSABLE popup container updating img & p from js depending on which frog clicked-->
+    <div id="frogModal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="modal-close" onclick="closeModal()" aria-label="Close popup">×</button>
+  
+        <img id="modalImg" class="modal-img" alt="" />
+        <h3 id="modalTitle" class = "modal-title"></h3>
+        <p id="modalDesc" class="modal-desc"></p>
+      </div>
+    </div>
+  
+    <div class="book">
+      <div class="page" id="page1">
+        <div class="front">
+          <h2>Frog Fact #1</h2>
+          <p>Frogs can breathe through their skin.</p>
+          <button class="next" data-next="page1">Next →</button>
+        </div>
+        <div class="back">
+          <h2>Frog Fact #2</h2>
+          <p>Some frogs freeze in winter and wake up in spring.</p>
+          <button class="next" data-next="page2">Next →</button>
+        </div>
+      </div>
+    
+      <div class="page" id="page2">
+        <div class="front">
+          <h2>Frog Fact #3</h2>
+          <p>Frogs use their eyes to help swallow food.</p>
+          <button class="next" data-next="page3">Next →</button>
+        </div>
+        <div class="back">
+          <h2>Frog Fact #4</h2>
+          <p>Bright colors can warn predators: “I’m toxic!”</p>
+          <button class="reset">↺ Start over</button>
+        </div>
+      </div>
+    </div>
 
+    <script>
+      const pages = ["page1", "page2"];
+    
+      document.addEventListener("click", (e) => {
+        const nextBtn = e.target.closest(".next");
+        const resetBtn = e.target.closest(".reset");
+    
+        if (nextBtn) {
+          // which page should flip?
+          const pageId = nextBtn.dataset.next;
+          const page = document.getElementById(pageId);
+    
+          // flip it
+          page.classList.add("flipped");
+    
+          // after it flips, push it behind the remaining pages
+          // so the next page becomes clickable/visible
+          setTimeout(() => {
+            page.style.zIndex = 0;
+          }, 900);
+        }
+    
+        if (resetBtn) {
+          pages.forEach((id, i) => {
+            const p = document.getElementById(id);
+            p.classList.remove("flipped");
+            p.style.zIndex = (pages.length - i); // restore stacking
+          });
+        }
+      });
+    </script>    
+    
+  <!--load JS at BOTTOM-> ensures HTML loads first, prevents JS from running before elem exist-->
   <script src="script.js"></script>
 </body>
 </html>

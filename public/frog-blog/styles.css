@@ -24,4 +24,117 @@ body {
     transform: scale(1.05);
     background-color: #92d69b;
   }
-  
+  /* Modal background overlay */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;           /* hidden by default */
+  place-items: center;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1.5rem;
+}
+
+/* When modal is open */
+.modal.open {
+  display: grid;
+}
+
+.modal-content {
+  position: relative;
+  width: min(520px, 92vw);
+  background: white;
+  border-radius: 16px;
+  padding: 1rem 1rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.modal-title {
+  margin: 0.75rem 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.modal-desc {
+  margin: 0.75rem 0 0;
+  font-size: 1.05rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.book {
+  width: min(420px, 90vw);
+  height: 280px;
+  position: relative;
+  perspective: 1400px; /* gives 3D depth */
+  margin: 2rem auto;
+}
+
+/* each page sits on top of the previous */
+.page {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 0.9s ease;
+  border-radius: 18px;
+}
+
+/* front/back faces */
+.page > .front,
+.page > .back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  padding: 1.25rem 1.25rem 1rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+/* front face styling */
+.page > .front {
+  background: #fffdf5;
+}
+
+/* back face is flipped so it reads correctly after page flip */
+.page > .back {
+  background: #f3fff6;
+  transform: rotateY(180deg);
+}
+
+/* when flipped, rotate page */
+.page.flipped {
+  transform: rotateY(-180deg);
+}
+
+/* layering: page1 above page2 at start */
+#page1 { z-index: 2; }
+#page2 { z-index: 1; }
+
+button {
+  align-self: flex-end;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}

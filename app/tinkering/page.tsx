@@ -16,6 +16,14 @@ export default function TinkeringPage() {
           <p className="text-sm text-green-700 ml-4">frog=danger</p>
         </li>
       </ul>
+      <ul className="list-disc pl-6 space-y-4 text-green-800">
+        <li>
+          <Link href="/frog-blog/index.html" className="text-emerald-700 underline hover:text-emerald-900">
+          🐸 Frog Blog 🐸
+          </Link>
+          <p className="text-sm text-green-700 ml-4">all about my favorite amphibian!</p>
+        </li>
+      </ul>
     </section>
   );
 }
