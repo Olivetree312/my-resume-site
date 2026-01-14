@@ -51,35 +51,42 @@
     </div>
   
     <div class="book">
+      <div class="page cover" id="frontCover">
+        <div class="front">
+          <h1>Frogcyclopedia</h1>
+          <img src="images/kermit.gif" alt="the best frog boi">
+          <button class="next" data-next="frontCover">Begin Reading</button>
+        </div>
+        <div class="back"></div>
+      </div>
       <div class="page" id="page1">
         <div class="front">
-          <h2>Frog Fact #1</h2>
-          <p>Frogs can breathe through their skin.</p>
+          <h2>Toads are frogs</h2>
+          <p>The word "toad" is usually used for frogs that have warty and dry skin, as well as shorter hind legs.</p>
           <button class="next" data-next="page1">Next →</button>
         </div>
         <div class="back">
-          <h2>Frog Fact #2</h2>
-          <p>Some frogs freeze in winter and wake up in spring.</p>
-          <button class="next" data-next="page2">Next →</button>
+          <h2>Gotta see to swallow</h2>
+          <p>When a frog swallows food, it pulls its eyes down to the roof of its mouth, to help push the food down its throat.</p>
         </div>
       </div>
     
       <div class="page" id="page2">
         <div class="front">
-          <h2>Frog Fact #3</h2>
-          <p>Frogs use their eyes to help swallow food.</p>
-          <button class="next" data-next="page3">Next →</button>
+          <h2>First singers</h2>
+          <p>Frogs were the first land animals with vocal cords. Male frogs have vocal sacks, which fill with air and allow them to be heard from up to a mile away.</p>
+          <button class="next" data-next="page2">Next →</button>
         </div>
-        <div class="back">
-          <h2>Frog Fact #4</h2>
-          <p>Bright colors can warn predators: “I’m toxic!”</p>
+        <div class="back" id="page3">
+          <h2>Long jumpers</h2>
+          <p>Launched by their long legs, many frogs can leap more than 20 times their body length.</p>
           <button class="reset">↺ Start over</button>
         </div>
       </div>
     </div>
 
     <script>
-      const pages = ["page1", "page2"];
+      const pages = ["frontCover", "page1", "page2"];
     
       document.addEventListener("click", (e) => {
         const nextBtn = e.target.closest(".next");

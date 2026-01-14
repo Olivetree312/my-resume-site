@@ -81,8 +81,8 @@ body {
 }
 
 .book {
-  width: min(420px, 90vw);
-  height: 280px;
+  width: min(300px, 90vw);
+  height: 500px;
   position: relative;
   perspective: 1400px; /* gives 3D depth */
   margin: 2rem auto;
@@ -111,12 +111,31 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Cover uses the same front/back structure as other pages */
+.page.cover > .front,
+.page.cover > .back {
+  background: #5d401b;
+  color: #fff;
+}
+
+/* back face still needs the flip */
+.page.cover > .back {
+  transform: rotateY(180deg);
+}
+
+/* back face still needs the flip */
+.page.cover > .back {
+  transform: rotateY(180deg);
+}
+
 
 /* front face styling */
 .page > .front {
-  background: #fffdf5;
+  background: #f3fff6;
 }
 
 /* back face is flipped so it reads correctly after page flip */
@@ -131,6 +150,7 @@ body {
 }
 
 /* layering: page1 above page2 at start */
+#frontCover { z-index: 3; }
 #page1 { z-index: 2; }
 #page2 { z-index: 1; }
 
