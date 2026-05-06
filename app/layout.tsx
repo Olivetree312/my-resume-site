@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="p-4 shadow bg-white flex gap-4">
           <Link href="/">🏡 Sweet Home</Link>
           <Link href="/about">🌿 About</Link>
-          <Link href="/projects">🧪 Labs</Link>
+          <Link href="/projects">🧪 Projects</Link>
           <Link href="/tinkering">🛠️ Tinkering</Link>
           <Link href="/blog">🍄 Blog</Link>
         </nav>
